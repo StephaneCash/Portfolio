@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio | Stéphane KIKONI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script src="js/jquery.js"></script>
 </head>
+
 <body>
-    Hey Je suis KIKONI Stéph    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#" style="color:white">
+                    <span>Portfolio</span>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="# ">Home</a></li>
+                <li><a href="# ">About</a></li>
+                <li><a href="#">Parcours universitaitre</a></li>
+                <li><a href="">Compétences</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Accueil-->
+
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1"> Salut, Mon nom est </div>
+                <div class="text-2">Kikoni Stéphane</div>
+                <div class="text-3">Et je suis <span>ingénieur software</span></div>
+                <a href="#">Engagez moi</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About-->
+
+    <section class="about" id='about'>
+        <div class="max-width">
+            <h2 class="title">A propos de moi</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/home.jpg" />
+                </div>
+                <div class="column right">
+                    <div class="text">Je suis Stéphane et je suis <span>ingénieur software</div>
+                    <p>
+                        Software Ingénieur avec une expérience pratique de 3 ans, une bonne base de
+                        gestion de projets informatiques avec la méthodologie AGILE SCRUM et en
+                        développement continu
+                    </p>
+                    <a href="#">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Mes services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-paint-brush"></i></i>
+                        <div class="text">Web design</div>
+                        <p>
+                            Mi-graphiste, mi-informaticien, je suis spécialisé dans la création des pages
+                            Web entre autres s'occupe de tout l'aspect graphique d'un site Internet (illustrations,
+                            animations,
+                            typographie...). ... Dans certains cas, je serai amené à établir la charte graphique et à
+                            créer l'identité visuelle du site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-desktop"></i>
+                        <div class="text">IT</div>
+                        <p>L'informaticien assure le bon fonctionnement des outils informatiques : édition d'un cahier
+                            des charges technique selon les besoins des utilisateurs. choix du matériel physique, et
+                            éventuellement assemblage. mise en place et administration du réseau.
+                            Aussi, je peux réparer des PC de toute marque.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-code"></i>
+                        <div class="text">Code</div>
+                        <p>.
+                            Le génie logiciel applique les principes et techniques d'ingénierie à la conception de
+                            systèmes logiciels, intégrés et à grande échelle. L'ingénieur logiciel doit maîtriser la
+                            théorie et les méthodes de l'informatique. ... Si nécessaire, voir à l'entretien et à la
+                            certification logicielle.
+                            Les codes c'est ma passion
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences-->
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Compétences</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Mes compétences créatives et mon expérience.</div>
+                    <p>
+                        Programmer est, sans aucun doute, la chose la plus gratifiante intellectuellement que j’ai
+                        jamais réalisée. Programmer m’a appris que la vie se devait d’être amusante, remplie de
+                        créativité et vécue au maximum de son intensité. Programmer m’a appris que tout était possible ;
+                        je peux faire ce qui me plait en utilisant seulement mon esprit.
+
+                        Programmer m’a également enseigné qu’apprendre est drôle et ludique. Cela m’a montré que plus
+                        vous en savez, plus vous comprenez et êtes acteur du monde qui vous entoure. Programmer m’a
+                        confirmé qu’une vie en apprentissage continu est une meilleure vie à vivre. Programmer m’a
+                        révélé qui je suis au fond de moi, m’a donné une bonne estime de moi et m’a continuellement aidé
+                        à arriver à mes fins
+                    </p>
+                    <a href="#">Voir plus</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>58%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Javascript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>55%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
