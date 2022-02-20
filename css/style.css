@@ -5,6 +5,32 @@
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+.scroll-up-btn{
+    position:fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
 .navbar {
     position: fixed;
     width: 100%;
@@ -40,6 +66,7 @@
     display: inline-block;
 }
 .navbar .menu li a {
+    display: block;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -139,13 +166,16 @@ section .title::after{
     bottom: -12px;
     transform: translateX(-50%);
 }
+.row{
+    margin: 10px 0;
+}
 .about{
     font-family: 'Poppins', sans-serif;
 }
 .about .title::after{
     content: "Qui suis-je ?";
 }
-.about .about-content, .services .serv-content, .skills .skills-content{
+.about .about-content, .services .serv-content, .skills .skills-content, .contact .contact-content{
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -190,14 +220,18 @@ section .title::after{
     color: crimson;
     background:none;
 }
-.services{
+.services, .teams{
     background:#111;
     color: #fff;  
 }
 .services .title::before{
     background:#fff;
 }
-.services .title::after{
+.teams .title::before{
+    background:#fff;
+}
+.teams .title::after,
+.services .title::after, .contact .title::after{
     content: "Je fournis...";
     background:#111;
 }
@@ -311,7 +345,49 @@ section .title::after{
     width: 60%;
 }
 
+.contact .title::after{
+    content: "Adresses";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+     font: size 20px;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+.contact .contact-content .left{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height:65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500px;
+}
+.contact .contact-content .info .sub-title{
+    color: rgb(255, 255, 255);
+}
 
+footer{
+    text-align: center;
+    font-size: 18px;
+}
+footer span a{
+     color: crimson;
+}
 
 @media (max-width: 1300px) {
     .home .max-width {
@@ -359,9 +435,11 @@ section .title::after{
     }
     .navbar .menu li a {
         display: inline-block;
-        margin: 20px 0;
+        margin: 20px 10px;
         font-size: 25px;
         color:#fff;
+        text-align: left !important;
+        padding: 0;
     }
     .home .home-content .text-2 {
         font-size: 70px;
@@ -391,7 +469,7 @@ section .title::after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column, .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }

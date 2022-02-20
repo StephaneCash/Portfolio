@@ -9,10 +9,20 @@ $(document).ready(function () {
             $(".menu li a").removeClass('scrll');
             $('.logo a span').removeClass('scrll');
         }
+        if(this.scrollY > 500){
+            $(".scroll-up-btn").addClass('show');
+        }else{
+            $(".scroll-up-btn").removeClass('show');
+        }
     });
 
-    $('.menu-btn').click(function(){
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
+    $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
 });
