@@ -25,11 +25,11 @@
                 </a>
             </div>
             <ul class="menu">
-                <li><a href="#home" class="menu-btn">Home</a></li>
-                <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#services" class="menu-btn">Mes services</a></li>
-                <li><a href="#skills" class="menu-btn">Compétences</a></li>
-                <li><a href="#contact" class="menu-btn">Contacts</a></li>
+                <li><a href="#home" class="menu-btn links">Home</a></li>
+                <li><a href="#about" class="menu-btn links">About</a></li>
+                <li><a href="#services" class="menu-btn links">Mes services</a></li>
+                <li><a href="#skills" class="menu-btn links">Compétences</a></li>
+                <li><a href="#contact" class="menu-btn links">Contacts</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa fa-bars"></i>
@@ -192,7 +192,8 @@
                 <div class="column left">
                     <div class="text" style="font-size: 18px">Entrons en contact</div>
                     <p>
-                        Ici, j'ai renseigné que mes références principales, utiliser l'un de ses contacts pour en savoir plus à mon sujet.
+                        Ici, j'ai renseigné que mes références principales, utiliser l'un de ses contacts pour en savoir
+                        plus à mon sujet.
                     </p>
                     <div class="icons">
                         <div class="row">
@@ -240,12 +241,32 @@
     </section>
     <section>
         <footer>
-            <span>Créé par <a href="#">Kikoni Stéphane</a> | <span class="fa fa-copyright"></span> 2021 Tous droits réservés </span>
+            <span>Créé par <a href="#">Kikoni Stéphane</a> | <span class="fa fa-copyright"></span> 2021 Tous droits
+                réservés </span>
         </footer>
     </section>
 
 
     <script src="js/script.js"></script>
+
+    <script>
+        const li = document.querySelectorAll('.links');
+        console.log("Li : ", li)
+        const sec = document.querySelectorAll('section');
+        console.log(sec, ' SECTIONS')
+
+        function activeMenu() {
+            let len = sec.length;
+
+            while (--len && window.scrollY + 97 < sec[len].offsetTop) { }
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[len].classList.add("active");
+
+        }
+        activeMenu();
+
+        window.addEventListener('scroll', activeMenu);
+    </script>
 
 </body>
 

@@ -381,6 +381,11 @@ section .title::after{
     color: rgb(255, 255, 255);
 }
 
+li a.active{
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
 footer{
     text-align: center;
     font-size: 18px;
