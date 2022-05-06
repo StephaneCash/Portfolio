@@ -333,15 +333,19 @@ section .title::after{
     width: 85%;
 }
 .skills .skills-content .right .css::before{
-    width: 58%;
+    width: 68%;
 }
 .skills .skills-content .right .js::before{
-    width: 67%;
+    width: 75%;
 }
 .skills .skills-content .right .php::before{
-    width: 55%;
+    width: 65%;
 }
 .skills .skills-content .right .mysql::before{
+    width: 70%;
+}
+
+.skills .skills-content .right .mongo::before{
     width: 60%;
 }
 
