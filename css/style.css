@@ -270,7 +270,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .skills .title::after{
-    content: "Ce je fais."
+    content: "Ce que je fais."
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
