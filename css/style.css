@@ -330,23 +330,23 @@ section .title::after{
     border-radius: 3px;
 }
 .skills .skills-content .right .html::before{
-    width: 85%;
+    width: 100%
 }
 .skills .skills-content .right .css::before{
-    width: 68%;
+    width: 100%;
 }
 .skills .skills-content .right .js::before{
-    width: 75%;
+    width: 100%;
 }
 .skills .skills-content .right .php::before{
-    width: 65%;
+    width: 100%;
 }
 .skills .skills-content .right .mysql::before{
-    width: 70%;
+    width: 100%;
 }
 
 .skills .skills-content .right .mongo::before{
-    width: 60%;
+    width: 100%;
 }
 
 .contact .title::after{
